@@ -1,0 +1,94 @@
+body{
+background-color: white;
+
+}
+
+*{
+    
+    font-family: 'Seymour One', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+
+}
+.fade{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+.leterVal{
+    background-color: red;
+    margin: 2px;
+}
+
+.play{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+    
+}
+.timer span{
+    /*Ovo ce biti tajmer kada igra krene i bice pozicioniran u gornjem desnom uglu  */
+    letter-spacing: 0.75em;
+    font-size: 25px;
+}
+.timer{
+    position: absolute;
+    right: 2%;
+    font-size: 25px;
+}
+
+
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideOutUp {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    100% {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    }
+    }
+    @keyframes slideOutUp {
+    0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    100% {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    }
+    } 
